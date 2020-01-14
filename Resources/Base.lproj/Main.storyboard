@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Loop_Blinn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXv-mv-TAW">
+                                <rect key="frame" x="64.5" y="300.5" width="142.5" height="295"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="256"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DeC-5k-NaT" customClass="MetalView" customModule="Loop_Blinn" customModuleProvider="target">
+                                <rect key="frame" x="207" y="300.5" width="142.5" height="295"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sXv-mv-TAW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0ZJ-d1-Qlj"/>
+                            <constraint firstItem="sXv-mv-TAW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9g0-N0-d8k"/>
+                            <constraint firstItem="DeC-5k-NaT" firstAttribute="width" secondItem="sXv-mv-TAW" secondAttribute="width" id="Ggw-ZH-WfA"/>
+                            <constraint firstItem="DeC-5k-NaT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bT0-8I-Q3c"/>
+                            <constraint firstItem="sXv-mv-TAW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cN5-ba-HPP"/>
+                            <constraint firstItem="DeC-5k-NaT" firstAttribute="bottom" secondItem="sXv-mv-TAW" secondAttribute="bottom" id="fy5-c3-eFV"/>
+                            <constraint firstItem="DeC-5k-NaT" firstAttribute="top" secondItem="sXv-mv-TAW" secondAttribute="top" id="jPG-Fe-JGW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="sXv-mv-TAW" id="3wz-0r-XZ9"/>
+                        <outlet property="metalView" destination="DeC-5k-NaT" id="J5x-RY-u7c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="121.875"/>
+        </scene>
+    </scenes>
+</document>
